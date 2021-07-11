@@ -13,7 +13,7 @@ public class ProductoServiceImpl implements ProductoService {
     ProductoRepository productoRepository;
     
     @Override
-    public List<Producto> buscarProductos() {
+    public List<Producto> buscarProductosSegunMasVencido() {
         return productoRepository.findAllByOrderByFechaVencimientoAsc();
     }
     

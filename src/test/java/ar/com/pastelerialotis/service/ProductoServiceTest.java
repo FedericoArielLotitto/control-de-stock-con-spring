@@ -15,14 +15,14 @@ public class ProductoServiceTest {
     ProductoService productoService;
     
     @Test
-    public void buscarProductosTest_conProductosGuardados_retornaListaDeProductos() {
-        List<Producto> listaProductos = productoService.buscarProductos();
+    public void buscarProductosEnOrdenDeVencimientoTest_conProductosGuardados_retornaListaDeProductos() {
+        List<Producto> listaProductos = productoService.buscarProductosSegunMasVencido();
         Assertions.assertThat(listaProductos).isNotEmpty();
     }
     
     @Test
-    public void buscarProductosTest_conProductosEnBase_retornaProductosEnOrdenDeFechaDeVencimiento() {
-        List<Producto> listaProductos = productoService.buscarProductos();
+    public void buscarProductosEnOrdenDeVencimientoTest_conProductosEnBase_retornaProductosEnOrdenDeFechaDeVencimiento() {
+        List<Producto> listaProductos = productoService.buscarProductosSegunMasVencido();
         //¿Cómo genero un escenario real de test? (donde asserteo que cada producto es mas viejo que el siguiente)
         Producto productoMasViejo = listaProductos.get(0);
         Producto productoMasNuevo = listaProductos.get(1);
