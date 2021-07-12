@@ -7,9 +7,10 @@ CREATE TABLE producto (
 );
 
 INSERT INTO producto
-(nombre     , precio, cantidad, fecha_vencimiento    ) VALUES
-('Lemon pie', 220   , 2       , '2021-07-16 16:00:00'),
-('Cheescake', 300.00, 2       , '2021-07-15 17:30:00'),
-('Lemon pie', 250.75, 2       , '2021-07-18 17:30:00');
-    
+(nombre                     , precio, cantidad, fecha_vencimiento    ) VALUES
+('Lemon pie'                , 220   , 2       , '2021-07-16 16:00:00'),
+('Cheescake'                , 300.00, 2       , '2021-07-15 17:30:00'),
+('Torta balcarce'           , 300.00, 2       , '2021-07-15 17:30:00'),
+('Pavlova de dulce de leche', 250.75, 2       , '2021-07-18 17:30:00');
+
 
